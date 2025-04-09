@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Odd One Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div class="game-header">
+                <h1>Emoji Odd One Out</h1>
+                <div class="game-stats">
+                    <div class="score-container">
+                        <span>Score: </span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="high-score-container">
+                        <span>High Score: </span>
+                        <span id="highScore">0</span>
+                    </div>
+                    <div class="level-container">
+                        <span>Level: </span>
+                        <span id="level">1</span>
+                    </div>
+                    <div class="timer-container">
+                        <span>Time: </span>
+                        <span id="timer">15</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game-board" id="gameBoard">
+                <!-- Game board will be populated by JavaScript -->
+            </div>
+            
+            <div class="game-controls">
+                <button id="startButton">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="correctSound" src="https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3"></audio>
+    <audio id="wrongSound" src="https://assets.mixkit.co/active_storage/sfx/1114/1114-preview.mp3"></audio>
+    <audio id="victorySound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
+    <audio id="gameOverSound" src="https://assets.mixkit.co/active_storage/sfx/2875/2875-preview.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html> 
